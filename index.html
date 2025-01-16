@@ -102,22 +102,46 @@
     <!-- Diplômes Section -->
     <section class="py-12 px-4 bg-gray-900 text-white text-center">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold mb-4">Diplômes</h2>
-            <ul class="list-disc list-inside">
-                <li>Bac STMG</li>
-                <li>BTS MCO</li>
-                <li>TP DWWM</li>
-            </ul>
+            <h2 class="text-3xl font-bold mb-6">Diplômes</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg  hover:bg-gray-700 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Bac STMG</h3>
+                    <p class="text-gray-400 text-sm">Sciences et Technologies du Management et de la Gestion</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg  hover:bg-gray-700 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">BTS MCO</h3>
+                    <p class="text-gray-400 text-sm">Management Commercial Opérationnel</p>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-lg  hover:bg-gray-700 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">TP DWWM</h3>
+                    <p class="text-gray-400 text-sm">Titre Professionnel Développeur Web et Web Mobile</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Biographie Section -->
-    <section class="py-12 px-4 bg-white text-center">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4">Biographie</h2>
-            <p class="text-gray-600 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim aliquet nunc sit amet dictum. Vivamus tincidunt aliquet leo, at porttitor quam tincidunt et...</p>
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto max-w-4xl flex flex-col lg:flex-row items-center lg:items-start text-gray-800">
+            <!-- Texte à gauche -->
+            <div class="lg:w-1/2 text-left">
+                <h2 class="text-3xl font-bold mb-4">Biographie</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dignissim aliquet nunc sit amet dictum. 
+                    Vivamus tincidunt aliquet leo, at porttitor quam tincidunt et. Praesent lacinia lacus ut eros ullamcorper 
+                    gravida. Etiam id velit vitae nunc feugiat euismod. Pellentesque habitant morbi tristique senectus et 
+                    netus et malesuada fames ac turpis egestas.
+                </p>
+            </div>
+            <!-- Image à droite -->
+            <div class="lg:w-1/2 lg:pl-8 mt-6 lg:mt-0">
+                <div class="w-full h-64 bg-gray-300 rounded-lg overflow-hidden flex items-center justify-center">
+                    <img src="logo.svg" alt="Image Biographie" class="object-cover w-full h-full">
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <!-- Projets Section -->
     <section class="py-12 px-4 bg-gray-900 text-white text-center">
@@ -127,17 +151,33 @@
                 <div class="bg-gray-800 p-6 rounded-lg shadow">
                     <h3 class="text-xl font-bold">Projet 1 - Site Web</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
-                    <div class="w-full h-48 bg-gray-700 rounded-lg flex items-center justify-center">
-                        <span class="text-gray-400">Image Placeholder</span>
+                    <div class="w-full h-48 bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/800x400" alt="Image Projet 1" class="w-full h-full object-cover">
                     </div>
                 </div>
                 <div class="bg-gray-800 p-6 rounded-lg shadow">
                     <h3 class="text-xl font-bold">Projet 2 - Application Mobile</h3>
                     <p>Lorem ipsum dolor sit amet...</p>
-                    <div class="w-full h-48 bg-gray-700 rounded-lg flex items-center justify-center">
-                        <span class="text-gray-400">Image Placeholder</span>
+                    <div class="w-full h-48 bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/800x400" alt="Image Projet 2" class="w-full h-full object-cover">
                     </div>
                 </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold">Projet 3 - E-commerce</h3>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <div class="w-full h-48 bg-gray-700 rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/800x400" alt="Image Projet 3" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+            <!-- Section pour voir tous les projets -->
+            <div class="mt-8">
+                <button class="bg-gray-700 hover:bg-gray-600 text-white py-3 px-6 rounded-full font-bold text-lg">
+                    Voir tous mes projets
+                </button>
+                <p class="text-gray-400 mt-2 text-sm">
+                    Cliquez sur le bouton pour découvrir l'ensemble de mes projets.
+                </p>
             </div>
         </div>
     </section>
@@ -150,29 +190,36 @@
                 <li class="bg-white p-6 rounded-lg shadow">
                     <h3 class="text-xl font-bold">Hyper U Mende</h3>
                     <p class="text-gray-600">Chef de rayon - Septembre 2020 à Juin 2022</p>
-                    <div class="w-full h-48 bg-gray-300 rounded-lg flex items-center justify-center">
-                        <span class="text-gray-500">Image Placeholder</span>
+                    <div class="w-full h-48 bg-gray-300 rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/800x400" alt="Image Hyper U Mende" class="w-full h-full object-cover">
                     </div>
                 </li>
                 <li class="bg-white p-6 rounded-lg shadow">
                     <h3 class="text-xl font-bold">Lycée Emile Peytavin Mende</h3>
                     <p class="text-gray-600">Assistant d'éducation - Septembre 2022 à Septembre 2023</p>
-                    <div class="w-full h-48 bg-gray-300 rounded-lg flex items-center justify-center">
-                        <span class="text-gray-500">Image Placeholder</span>
+                    <div class="w-full h-48 bg-gray-300 rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/800x400" alt="Image Lycée Emile Peytavin" class="w-full h-full object-cover">
                     </div>
                 </li>
             </ul>
         </div>
     </section>
+    
 
     <!-- Formulaire de Contact Section -->
     <section class="py-12 px-4 bg-gray-900 text-white text-center">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-4">Me Contacter</h2>
             <form class="space-y-4">
-                <div>
-                    <label class="block">Nom Prénom</label>
-                    <input type="text" class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white">
+                <div class="flex space-x-4">
+                    <div class="w-1/2">
+                        <label class="block">Nom</label>
+                        <input type="text" class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white">
+                    </div>
+                    <div class="w-1/2">
+                        <label class="block">Prénom</label>
+                        <input type="text" class="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white">
+                    </div>
                 </div>
                 <div>
                     <label class="block">Email</label>
@@ -186,6 +233,7 @@
             </form>
         </div>
     </section>
+    
 
     <!-- Footer Section -->
     <footer class="bg-gray-900 text-white py-4 text-center">
