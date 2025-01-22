@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
     <title>Document</title>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50 font-sans scroll-smooth">
         <!-- Header Section -->
         <header class="bg-white shadow fixed top-0 left-0 w-full z-50">
             <div class="container mx-auto flex justify-between items-center py-3 px-4">
@@ -49,7 +49,7 @@
                         <a href="#contact" class="bg-gray-900 text-white px-6 py-3 rounded-md shadow hover:bg-gray-700 transition duration-300">
                             Me Contacter
                         </a>
-                        <a href="path/to/cv.pdf" class="bg-gray-900 text-white px-6 py-3 rounded-md shadow hover:bg-gray-700 transition duration-300">
+                        <a id="downloadCV" class="bg-gray-900 text-white px-6 py-3 rounded-md shadow hover:bg-gray-700 transition duration-300">
                             Télécharger mon CV
                         </a>
                     </div>
@@ -61,7 +61,7 @@
             </div>
         </section>
         
-        <section class="py-12 px-4 bg-white text-center">
+        <section id="competences" class="py-12 px-4 bg-white text-center">
             <div class="container mx-auto max-w-4xl">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4">Compétences</h2>
                 <div class="grid grid-cols-5 gap-8">
@@ -102,7 +102,7 @@
         
         
     <!-- Diplômes Section -->
-    <section class="py-12 px-4 bg-gray-900 text-white text-center">
+    <section id="diplomes" class="py-12 px-4 bg-gray-900 text-white text-center">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-6">Diplômes</h2>
             <div class="space-y-6">
@@ -123,7 +123,7 @@
     </section>
 
     <!-- Biographie Section -->
-    <section class="py-12 px-4 bg-white">
+    <section id="biographie" class="py-12 px-4 bg-white">
         <div class="container mx-auto max-w-4xl flex flex-col lg:flex-row items-center lg:items-start text-gray-800">
             <!-- Texte à gauche -->
             <div class="lg:w-1/2 text-left">
@@ -151,7 +151,7 @@
     
 
     <!-- Projets Section -->
-    <section class="py-12 px-4 bg-gray-900 text-white text-center">
+    <section id="projets" class="py-12 px-4 bg-gray-900 text-white text-center">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-4">Mes Projets</h2>
             <div class="space-y-4">
@@ -159,7 +159,7 @@
                     <h3 class="text-xl font-bold">Projet 1 - Site Web</h3>
                     <p>Création d’un site internet dédié au personnage de Swain. Ce projet explore son univers à travers une présentation immersive, une biographie, et une galerie multimédia. L’objectif était de concevoir une interface intuitive et visuellement cohérente, adaptée au projet.</p>
                     <div class="w-full h-48 bg-gray-700 rounded-lg overflow-hidden">
-                        <a href="https://theog48.github.io/brief1/">
+                        <a href="https://theog48.github.io/brief1/" target="_blank" >
                         <img src="images/brief1.jpeg" alt="Image Projet 1" class="w-full h-full object-cover">
                         </a>
                     </div>
@@ -191,7 +191,7 @@
         </div>
     </section>
     <!-- Expérience professionnelle -->
-    <section class="py-12 px-4 bg-gray-100 text-center">
+    <section id="experience" class="py-12 px-4 bg-gray-100 text-center">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold text-gray-800 mb-8">Expérience Professionnelle</h2>
             <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2">
@@ -215,7 +215,7 @@
         </div>
     </section>
     <!-- Formulaire de Contact Section -->
-    <section class="py-12 px-4 bg-gray-900 text-white text-center">
+    <section id="contact" class="py-12 px-4 bg-gray-900 text-white text-center">
         <div class="container mx-auto max-w-4xl">
             <h2 class="text-3xl font-bold mb-4">Me Contacter</h2>
             <form class="space-y-4">
@@ -249,6 +249,7 @@
             <p>&copy; 2025 Théo Grasset. Tous droits réservés.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 <body>
     
 </body>
